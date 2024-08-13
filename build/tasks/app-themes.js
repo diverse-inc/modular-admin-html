@@ -1,6 +1,7 @@
 var path = require('path');
 var config = require('../../config/');
 var glob = require('glob');
+var sass = require('gulp-sass')(require('sass'));
 
 module.exports.task = function(gulp, plugins, paths) {
 
@@ -18,13 +19,13 @@ module.exports.task = function(gulp, plugins, paths) {
 			gulp.src(src)
 				.pipe(plugins.concat(name))
 				.pipe(
-					plugins.sass({
+					sass({
 						includePaths: [
 							path.resolve( config.srcDir ),
 							path.resolve( config.npmDir ),
 						]
 					})
-					.on('error', plugins.sass.logError)
+					.on('error', sass.logError)
 				)
 				.pipe(plugins.autoprefixer())
 				.pipe(gulp.dest(config.destDir + '/css'))
