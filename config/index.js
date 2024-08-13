@@ -40,7 +40,7 @@ config.paths.vendor = {
 		npmDir + '/popper.js/dist/umd/popper.js',
 		npmDir + '/bootstrap/dist/js/bootstrap.js',
 		npmDir + '/raphael/raphael.js',
-		npmDir + '/morris.js/morris.js',
+		npmDir + '/morris.js06/dist/morris.js',
 	],
 	styles: [
 		npmDir + '/animate.css/animate.css',
@@ -51,7 +51,7 @@ config.paths.vendor = {
 		npmDir + '/dropzone/dist/dropzone.css',
 		npmDir + '/quill/dist/quill.core.css',
 		npmDir + '/quill/dist/quill.snow.css',
-		npmDir + '/morris.js/morris.css',
+		npmDir + '/morris.js06/dist/morris.css',
 		npmDir + '/bootstrap/dist/css/bootstrap.css',
 	],
 	fonts: [
