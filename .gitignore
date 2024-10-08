@@ -23,5 +23,4 @@ lib-cov
 npm-debug.log
 
 *.iml
-/dist
 /.env
