@@ -29,7 +29,6 @@
     "metismenu": "^2.7.2",
     "morris.js06": "^0.6.9",
     "nprogress": "^0.2.0",
-    "opencollective": "^1.0.3",
     "popper.js": "^1.12.9",
     "quill": "^1.3.5",
     "raphael": "^2.2.7",
@@ -69,12 +68,6 @@
     "start": "npm run gulp",
     "build": "npm run gulp build",
     "deploy": "cross-env BASE_URL=\"/modular-admin-html/\" npm run build && gh-pages -d dist",
-    "gulp": "gulp --gulpfile build/gulpfile.js",
-    "postinstall": "opencollective postinstall"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/modular-admin",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
+    "gulp": "gulp --gulpfile build/gulpfile.js"
   }
 }
